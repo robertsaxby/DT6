@@ -1,0 +1,71 @@
+{
+"csvOptions": {
+      "encoding": "UTF-8", 
+      "fieldDelimiter": "|", 
+      "quote": "", 
+      "skipLeadingRows": "1"
+    },
+    "schema": {
+    "fields": [
+      {
+        "mode": "REQUIRED", 
+        "name": "Customer_Key", 
+        "type": "INTEGER"
+      }, 
+      {
+        "mode": "REQUIRED", 
+        "name": "WWI_Customer_ID", 
+        "type": "INTEGER"
+      }, 
+      {
+        "mode": "REQUIRED", 
+        "name": "Customer", 
+        "type": "STRING"
+      }, 
+      {
+        "mode": "REQUIRED", 
+        "name": "Bill_To_Customer", 
+        "type": "STRING"
+      }, 
+      {
+        "mode": "REQUIRED", 
+        "name": "Category", 
+        "type": "STRING"
+      }, 
+      {
+        "mode": "REQUIRED", 
+        "name": "Buying_Group", 
+        "type": "STRING"
+      }, 
+      {
+        "mode": "REQUIRED", 
+        "name": "Primary_Contact", 
+        "type": "STRING"
+      }, 
+      {
+        "mode": "REQUIRED", 
+        "name": "Postal_Code", 
+        "type": "STRING"
+      }, 
+      {
+        "mode": "REQUIRED", 
+        "name": "Valid_From", 
+        "type": "TIMESTAMP"
+      }, 
+      {
+        "mode": "REQUIRED", 
+        "name": "Valid_To", 
+        "type": "TIMESTAMP"
+      }, 
+      {
+        "mode": "REQUIRED", 
+        "name": "Lineage_Key", 
+        "type": "INTEGER"
+      }
+    ]
+}, 
+    "sourceFormat": "CSV", 
+    "sourceUris": [
+      "gs://six-impossible-things-dt6-resources/lab/part1/data/DimCustomer.txt"
+    ]
+  }

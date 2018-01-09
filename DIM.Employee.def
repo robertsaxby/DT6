@@ -1,0 +1,61 @@
+{
+"csvOptions": {
+      "encoding": "UTF-8", 
+      "fieldDelimiter": "|", 
+      "quote": "", 
+      "skipLeadingRows": "1"
+    },
+    "schema": {
+    "fields": [
+      {
+        "mode": "REQUIRED", 
+        "name": "Employee_Key", 
+        "type": "INTEGER"
+      }, 
+      {
+        "mode": "REQUIRED", 
+        "name": "WWI_Employee_ID", 
+        "type": "INTEGER"
+      }, 
+      {
+        "mode": "REQUIRED", 
+        "name": "Employee", 
+        "type": "STRING"
+      }, 
+      {
+        "mode": "REQUIRED", 
+        "name": "Preferred_Name", 
+        "type": "STRING"
+      }, 
+      {
+        "mode": "REQUIRED", 
+        "name": "Is_Salesperson", 
+        "type": "BOOLEAN"
+      }, 
+      {
+        "mode": "REQUIRED", 
+        "name": "Photo", 
+        "type": "TIMESTAMP"
+      }, 
+      {
+        "mode": "REQUIRED", 
+        "name": "Valid_From", 
+        "type": "TIMESTAMP"
+      }, 
+      {
+        "mode": "REQUIRED", 
+        "name": "Valid_To", 
+        "type": "INTEGER"
+      }, 
+      {
+        "mode": "REQUIRED", 
+        "name": "Lineage_Key", 
+        "type": "INTEGER"
+      }
+    ]
+}, 
+    "sourceFormat": "CSV", 
+    "sourceUris": [
+      "gs://six-impossible-things-dt6-resources/lab/part1/data/DimEmployee.txt"
+    ]
+  }

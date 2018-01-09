@@ -1,0 +1,117 @@
+{
+"csvOptions": {
+      "encoding": "UTF-8", 
+      "fieldDelimiter": "|", 
+      "quote": "", 
+      "skipLeadingRows": "1"
+    },
+    "schema": {
+    "fields": [
+      {
+        "mode": "REQUIRED", 
+        "name": "Stock_Item_Key", 
+        "type": "INTEGER"
+      }, 
+      {
+        "mode": "REQUIRED", 
+        "name": "WWI_Stock_Item_ID", 
+        "type": "INTEGER"
+      }, 
+      {
+        "mode": "REQUIRED", 
+        "name": "Stock_Item", 
+        "type": "STRING"
+      }, 
+      {
+        "mode": "REQUIRED", 
+        "name": "Color", 
+        "type": "STRING"
+      }, 
+      {
+        "mode": "REQUIRED", 
+        "name": "Selling_Package", 
+        "type": "STRING"
+      }, 
+      {
+        "mode": "REQUIRED", 
+        "name": "Buying_Package", 
+        "type": "STRING"
+      }, 
+      {
+        "mode": "REQUIRED", 
+        "name": "Brand", 
+        "type": "STRING"
+      }, 
+      {
+        "mode": "REQUIRED", 
+        "name": "Size", 
+        "type": "STRING"
+      }, 
+      {
+        "mode": "REQUIRED", 
+        "name": "Lead_Time_Days", 
+        "type": "INTEGER"
+      }, 
+      {
+        "mode": "REQUIRED", 
+        "name": "Quantity_Per_Outer", 
+        "type": "INTEGER"
+      }, 
+      {
+        "mode": "REQUIRED", 
+        "name": "Is_Chiller_Stock", 
+        "type": "BOOLEAN"
+      }, 
+      {
+        "mode": "REQUIRED", 
+        "name": "Barcode", 
+        "type": "STRING"
+      }, 
+      {
+        "mode": "REQUIRED", 
+        "name": "Tax_Rate", 
+        "type": "FLOAT"
+      }, 
+      {
+        "mode": "REQUIRED", 
+        "name": "Unit_Price", 
+        "type": "FLOAT"
+      }, 
+      {
+        "mode": "REQUIRED", 
+        "name": "Recommended_Retail_Price", 
+        "type": "FLOAT"
+      }, 
+      {
+        "mode": "REQUIRED", 
+        "name": "Typical_Weight_Per_Unit", 
+        "type": "FLOAT"
+      }, 
+      {
+        "mode": "REQUIRED", 
+        "name": "Photo", 
+        "type": "TIMESTAMP"
+      }, 
+      {
+        "mode": "REQUIRED", 
+        "name": "Valid_From", 
+        "type": "TIMESTAMP"
+      }, 
+      {
+        "mode": "REQUIRED", 
+        "name": "Valid_To", 
+        "type": "INTEGER"
+      }, 
+      {
+        "mode": "REQUIRED", 
+        "name": "Lineage_Key", 
+        "type": "INTEGER"
+      }
+
+    ]
+}, 
+    "sourceFormat": "CSV", 
+    "sourceUris": [
+      "gs://six-impossible-things-dt6-resources/lab/part1/data/DimStockItem.txt"
+    ]
+  }

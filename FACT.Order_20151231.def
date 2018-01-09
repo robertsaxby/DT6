@@ -1,0 +1,112 @@
+{
+"csvOptions": {
+      "encoding": "UTF-8", 
+      "fieldDelimiter": "|", 
+      "quote": "", 
+      "skipLeadingRows": "1"
+    },
+    "schema": {
+    "fields": [
+      {
+        "mode": "REQUIRED", 
+        "name": "Order_Key", 
+        "type": "INTEGER"
+      }, 
+      {
+        "mode": "REQUIRED", 
+        "name": "City_Key", 
+        "type": "INTEGER"
+      }, 
+      {
+        "mode": "REQUIRED", 
+        "name": "Customer_Key", 
+        "type": "INTEGER"
+      }, 
+      {
+        "mode": "REQUIRED", 
+        "name": "Stock_Item_Key", 
+        "type": "INTEGER"
+      }, 
+      {
+        "mode": "REQUIRED", 
+        "name": "Order_Date_Key", 
+        "type": "DATE"
+      }, 
+      {
+        "mode": "NULLABLE", 
+        "name": "Picked_Date_Key", 
+        "type": "DATE"
+      }, 
+      {
+        "mode": "REQUIRED", 
+        "name": "Salesperson_Key", 
+        "type": "INTEGER"
+      }, 
+      {
+        "mode": "NULLABLE", 
+        "name": "Picker_Key", 
+        "type": "INTEGER"
+      }, 
+      {
+        "mode": "REQUIRED", 
+        "name": "WWI_Order_ID", 
+        "type": "INTEGER"
+      }, 
+      {
+        "mode": "NULLABLE", 
+        "name": "WWI_Backorder_ID", 
+        "type": "STRING"
+      }, 
+      {
+        "mode": "REQUIRED", 
+        "name": "Description", 
+        "type": "STRING"
+      }, 
+      {
+        "mode": "REQUIRED", 
+        "name": "Package", 
+        "type": "STRING"
+      }, 
+      {
+        "mode": "REQUIRED", 
+        "name": "Quantity", 
+        "type": "INTEGER"
+      }, 
+      {
+        "mode": "REQUIRED", 
+        "name": "Unit_Price", 
+        "type": "FLOAT"
+      }, 
+      {
+        "mode": "REQUIRED", 
+        "name": "Tax_Rate", 
+        "type": "FLOAT"
+      }, 
+      {
+        "mode": "REQUIRED", 
+        "name": "Total_Excluding_Tax", 
+        "type": "FLOAT"
+      }, 
+      {
+        "mode": "REQUIRED", 
+        "name": "Tax_Amount", 
+        "type": "FLOAT"
+      }, 
+      {
+        "mode": "REQUIRED", 
+        "name": "Total_Including_Tax", 
+        "type": "FLOAT"
+      }, 
+      {
+        "mode": "REQUIRED", 
+        "name": "Lineage_Key", 
+        "type": "INTEGER"
+      }
+
+    ]
+}, 
+    "sourceFormat": "CSV", 
+    "sourceUris": [
+      "gs://six-impossible-things-dt6-resources/lab/part1/data/FactOrder_20151231.txt"
+    ]
+  }

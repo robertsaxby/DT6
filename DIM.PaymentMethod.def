@@ -1,0 +1,47 @@
+{
+"csvOptions": {
+      "encoding": "UTF-8", 
+      "fieldDelimiter": "|", 
+      "quote": "", 
+      "skipLeadingRows": "1"
+    },
+    "schema": {
+    "fields": [
+      {
+        "mode": "REQUIRED", 
+        "name": "Payment_Method_Key", 
+        "type": "INTEGER"
+      }, 
+      {
+        "mode": "REQUIRED", 
+        "name": "WWI_Payment_Method_ID", 
+        "type": "INTEGER"
+      }, 
+      {
+        "mode": "REQUIRED", 
+        "name": "Payment_Method", 
+        "type": "STRING"
+      }, 
+      {
+        "mode": "REQUIRED", 
+        "name": "Valid_From", 
+        "type": "TIMESTAMP"
+      }, 
+      {
+        "mode": "REQUIRED", 
+        "name": "Valid_To", 
+        "type": "TIMESTAMP"
+      }, 
+      {
+        "mode": "REQUIRED", 
+        "name": "Lineage_Key", 
+        "type": "INTEGER"
+      }
+
+    ]
+}, 
+    "sourceFormat": "CSV", 
+    "sourceUris": [
+      "gs://six-impossible-things-dt6-resources/lab/part1/data/DimPaymentMethod.txt"
+    ]
+  }
