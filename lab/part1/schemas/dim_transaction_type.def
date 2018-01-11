@@ -1,0 +1,46 @@
+{
+  "csvOptions": {
+    "encoding": "UTF-8",
+    "fieldDelimiter": "|",
+    "quote": "",
+    "skipLeadingRows": "1"
+  },
+  "schema": {
+    "fields": [
+      {
+        "mode": "REQUIRED",
+        "name": "Transaction_Type_Key",
+        "type": "INTEGER"
+      },
+      {
+        "mode": "REQUIRED",
+        "name": "WWI_Transaction_Type_ID",
+        "type": "INTEGER"
+      },
+      {
+        "mode": "REQUIRED",
+        "name": "Transaction_Type",
+        "type": "STRING"
+      },
+      {
+        "mode": "REQUIRED",
+        "name": "Valid_From",
+        "type": "TIMESTAMP"
+      },
+      {
+        "mode": "REQUIRED",
+        "name": "Valid_To",
+        "type": "TIMESTAMP"
+      },
+      {
+        "mode": "REQUIRED",
+        "name": "Lineage_Key",
+        "type": "INTEGER"
+      }
+    ]
+  },
+  "sourceFormat": "CSV",
+  "sourceUris": [
+    "<gcs_data_location>/DimTransactionType.txt"
+  ]
+}

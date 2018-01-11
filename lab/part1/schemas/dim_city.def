@@ -1,0 +1,81 @@
+{
+  "csvOptions": {
+    "encoding": "UTF-8",
+    "fieldDelimiter": "|",
+    "quote": "",
+    "skipLeadingRows": "1"
+  },
+  "schema": {
+    "fields": [
+      {
+        "mode": "REQUIRED",
+        "name": "City_Key",
+        "type": "INTEGER"
+      },
+      {
+        "mode": "REQUIRED",
+        "name": "WWI_City_ID",
+        "type": "INTEGER"
+      },
+      {
+        "mode": "REQUIRED",
+        "name": "City",
+        "type": "STRING"
+      },
+      {
+        "mode": "REQUIRED",
+        "name": "State_Province",
+        "type": "STRING"
+      },
+      {
+        "mode": "REQUIRED",
+        "name": "Country",
+        "type": "STRING"
+      },
+      {
+        "mode": "REQUIRED",
+        "name": "Continent",
+        "type": "STRING"
+      },
+      {
+        "mode": "REQUIRED",
+        "name": "Sales_Territory",
+        "type": "STRING"
+      },
+      {
+        "mode": "REQUIRED",
+        "name": "Region",
+        "type": "STRING"
+      },
+      {
+        "mode": "REQUIRED",
+        "name": "Subregion",
+        "type": "STRING"
+      },
+      {
+        "mode": "REQUIRED",
+        "name": "Latest_Recorded_Population",
+        "type": "INTEGER"
+      },
+      {
+        "mode": "REQUIRED",
+        "name": "Valid_From",
+        "type": "TIMESTAMP"
+      },
+      {
+        "mode": "REQUIRED",
+        "name": "Valid_To",
+        "type": "TIMESTAMP"
+      },
+      {
+        "mode": "REQUIRED",
+        "name": "Lineage_Key",
+        "type": "INTEGER"
+      }
+    ]
+  },
+  "sourceFormat": "CSV",
+  "sourceUris": [
+    "<gcs_data_location>/DimCity.txt"
+  ]
+}

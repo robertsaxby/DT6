@@ -1,0 +1,87 @@
+{
+  "csvOptions": {
+    "encoding": "UTF-8",
+    "fieldDelimiter": "|",
+    "quote": "",
+    "skipLeadingRows": "1"
+  },
+  "schema": {
+    "fields": [
+      {
+        "mode": "REQUIRED",
+        "name": "Date",
+        "type": "DATE"
+      },
+      {
+        "mode": "REQUIRED",
+        "name": "Day_Number",
+        "type": "INTEGER"
+      },
+      {
+        "mode": "REQUIRED",
+        "name": "Day",
+        "type": "INTEGER"
+      },
+      {
+        "mode": "REQUIRED",
+        "name": "Month",
+        "type": "STRING"
+      },
+      {
+        "mode": "REQUIRED",
+        "name": "Short_Month",
+        "type": "STRING"
+      },
+      {
+        "mode": "REQUIRED",
+        "name": "Calendar_Month_Number",
+        "type": "INTEGER"
+      },
+      {
+        "mode": "REQUIRED",
+        "name": "Calendar_Month_Label",
+        "type": "STRING"
+      },
+      {
+        "mode": "REQUIRED",
+        "name": "Calendar_Year",
+        "type": "INTEGER"
+      },
+      {
+        "mode": "REQUIRED",
+        "name": "Calendar_Year_Label",
+        "type": "STRING"
+      },
+      {
+        "mode": "REQUIRED",
+        "name": "Fiscal_Month_Number",
+        "type": "INTEGER"
+      },
+      {
+        "mode": "REQUIRED",
+        "name": "Fiscal_Month_Label",
+        "type": "STRING"
+      },
+      {
+        "mode": "REQUIRED",
+        "name": "Fiscal_Year",
+        "type": "INTEGER"
+      },
+      {
+        "mode": "REQUIRED",
+        "name": "Fiscal_Year_Label",
+        "type": "STRING"
+      },
+      {
+        "mode": "REQUIRED",
+        "name": "ISO_Week_Number",
+        "type": "INTEGER"
+      }
+
+    ]
+  },
+  "sourceFormat": "CSV",
+  "sourceUris": [
+    "<gcs_data_location>/DimDate.txt"
+  ]
+}
