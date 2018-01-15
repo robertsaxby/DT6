@@ -66,6 +66,6 @@
   },
   "sourceFormat": "CSV",
   "sourceUris": [
-    "gs://six-impossible-things-dt6/DimCustomer.txt"
+    "<gcs_data_location>/DimCustomer.txt"
   ]
 }

@@ -82,6 +82,6 @@
   },
   "sourceFormat": "CSV",
   "sourceUris": [
-    "gs://six-impossible-things-dt6/DimDate.txt"
+    "<gcs_data_location>/DimDate.txt"
   ]
 }
