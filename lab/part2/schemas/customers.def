@@ -146,21 +146,6 @@
         "mode": "REQUIRED",
         "name": "PostalPostalCode",
         "type": "INTEGER"
-      },
-      {
-        "mode": "REQUIRED",
-        "name": "LastEditedBy",
-        "type": "TIMESTAMP"
-      },
-      {
-        "mode": "REQUIRED",
-        "name": "ValidFrom",
-        "type": "TIMESTAMP"
-      },
-      {
-        "mode": "REQUIRED",
-        "name": "ValidTo",
-        "type": "TIMESTAMP"
       }
     ]
   },
