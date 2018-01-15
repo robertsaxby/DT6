@@ -71,6 +71,6 @@
   },
   "sourceFormat": "CSV",
   "sourceUris": [
-    "gs://<gcs_data_location>/OrderLines.txt"
+    "<gcs_data_location>/OrderLines.txt"
   ]
 }

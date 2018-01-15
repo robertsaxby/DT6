@@ -8,7 +8,7 @@
   "schema": {
     "fields": [
       {
-        "mode": "REQUIRED", 
+        "mode": "REQUIRED",
         "name": "CustomerID",
         "type": "INTEGER"
       },
@@ -166,6 +166,6 @@
   },
   "sourceFormat": "CSV",
   "sourceUris": [
-    "gs://<gcs_data_location>/OrderLines.txt"
+    "<gcs_data_location>/OrderLines.txt"
   ]
 }

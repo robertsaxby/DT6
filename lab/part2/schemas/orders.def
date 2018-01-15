@@ -91,6 +91,6 @@
   },
   "sourceFormat": "CSV",
   "sourceUris": [
-    "gs://<gcs_data_location>/Orders.txt"
+    "<gcs_data_location>/Orders.txt"
   ]
 }
