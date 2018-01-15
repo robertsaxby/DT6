@@ -9,63 +9,68 @@
     "fields": [
       {
         "mode": "REQUIRED",
-        "name": "Customer_Key",
+        "name": "OrderLineID",
         "type": "INTEGER"
       },
       {
         "mode": "REQUIRED",
-        "name": "WWI_Customer_ID",
+        "name": "OrderID",
         "type": "INTEGER"
       },
       {
         "mode": "REQUIRED",
-        "name": "Customer",
+        "name": "StockItemID",
+        "type": "INTEGER"
+      },
+      {
+        "mode": "REQUIRED",
+        "name": "Description",
         "type": "STRING"
       },
       {
         "mode": "REQUIRED",
-        "name": "Bill_To_Customer",
-        "type": "STRING"
+        "name": "PackageTypeID",
+        "type": "INTEGER"
       },
       {
         "mode": "REQUIRED",
-        "name": "Category",
-        "type": "STRING"
+        "name": "Quantity",
+        "type": "INTEGER"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "UnitPrice",
+        "type": "FLOAT"
       },
       {
         "mode": "REQUIRED",
-        "name": "Buying_Group",
-        "type": "STRING"
+        "name": "TaxRate",
+        "type": "FLOAT"
       },
       {
         "mode": "REQUIRED",
-        "name": "Primary_Contact",
-        "type": "STRING"
+        "name": "PickedQuantity",
+        "type": "INTEGER"
       },
       {
-        "mode": "REQUIRED",
-        "name": "Postal_Code",
-        "type": "STRING"
-      },
-      {
-        "mode": "REQUIRED",
-        "name": "Valid_From",
+        "mode": "NULLABLE",
+        "name": "PickingCompletedWhen",
         "type": "TIMESTAMP"
       },
       {
         "mode": "REQUIRED",
-        "name": "Valid_To",
-        "type": "TIMESTAMP"
+        "name": "LastEditedBy",
+        "type": "INTEGER"
       },
       {
         "mode": "REQUIRED",
-        "name": "Lineage_Key",
-        "type": "INTEGER"
+        "name": "LastEditedWhen",
+        "type": "TIMESTAMP"
       }
     ]
   },
   "sourceFormat": "CSV",
   "sourceUris": [
-    "gs://six-impossible-things-dt6/DimCustomer.txt"
+    "gs://<gcs_data_location>/OrderLines.txt"
   ]
 }

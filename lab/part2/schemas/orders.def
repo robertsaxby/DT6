@@ -1,0 +1,96 @@
+{
+  "csvOptions": {
+    "encoding": "UTF-8",
+    "fieldDelimiter": "|",
+    "quote": "",
+    "skipLeadingRows": "1"
+  },
+  "schema": {
+    "fields": [
+      {
+        "mode": "REQUIRED",
+        "name": "OrderID",
+        "type": "INTEGER"
+      },
+      {
+        "mode": "REQUIRED",
+        "name": "CustomerID",
+        "type": "INTEGER"
+      },
+      {
+        "mode": "REQUIRED",
+        "name": "SalespersonPersonID",
+        "type": "INTEGER"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "PickedByPersonID",
+        "type": "INTEGER"
+      },
+      {
+        "mode": "REQUIRED",
+        "name": "ContactPersonID",
+        "type": "INTEGER"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "BackorderOrderID",
+        "type": "INTEGER"
+      },
+      {
+        "mode": "REQUIRED",
+        "name": "OrderDate",
+        "type": "DATE"
+      },
+      {
+        "mode": "REQUIRED",
+        "name": "ExpectedDeliveryDate",
+        "type": "DATE"
+      },
+      {
+        "mode": "REQUIRED",
+        "name": "CustomerPurchaseOrderNumber",
+        "type": "INTEGER"
+      },
+      {
+        "mode": "REQUIRED",
+        "name": "IsUndersupplyBackordered",
+        "type": "BOOLEAN"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "Comments",
+        "type": "TIMESTAMP"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "DeliveryInstructions",
+        "type": "INTEGER"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "InternalComments",
+        "type": "TIMESTAMP"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "PickingCompletedWhen",
+        "type": "TIMESTAMP"
+      },
+      {
+        "mode": "REQUIRED",
+        "name": "LastEditedBy",
+        "type": "INTEGER"
+      },
+      {
+        "mode": "REQUIRED",
+        "name": "LastEditedWhen",
+        "type": "TIMESTAMP"
+      }
+    ]
+  },
+  "sourceFormat": "CSV",
+  "sourceUris": [
+    "gs://<gcs_data_location>/Orders.txt"
+  ]
+}

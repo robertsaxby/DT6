@@ -56,6 +56,6 @@
   },
   "sourceFormat": "CSV",
   "sourceUris": [
-    "<gcs_data_location>/DimEmployee.txt"
+    "gs://six-impossible-things-dt6/DimEmployee.txt"
   ]
 }

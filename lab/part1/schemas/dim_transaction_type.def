@@ -41,6 +41,6 @@
   },
   "sourceFormat": "CSV",
   "sourceUris": [
-    "<gcs_data_location>/DimTransactionType.txt"
+    "gs://six-impossible-things-dt6/DimTransactionType.txt"
   ]
 }

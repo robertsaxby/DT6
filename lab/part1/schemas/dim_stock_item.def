@@ -111,6 +111,6 @@
   },
   "sourceFormat": "CSV",
   "sourceUris": [
-    "<gcs_data_location>/DimStockItem.txt"
+    "gs://six-impossible-things-dt6/DimStockItem.txt"
   ]
 }

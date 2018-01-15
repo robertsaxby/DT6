@@ -76,6 +76,6 @@
   },
   "sourceFormat": "CSV",
   "sourceUris": [
-    "<gcs_data_location>/DimCity.txt"
+    "gs://six-impossible-things-dt6/DimCity.txt"
   ]
 }

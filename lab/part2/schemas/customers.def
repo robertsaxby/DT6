@@ -1,0 +1,171 @@
+{
+  "csvOptions": {
+    "encoding": "UTF-8",
+    "fieldDelimiter": "|",
+    "quote": "",
+    "skipLeadingRows": "1"
+  },
+  "schema": {
+    "fields": [
+      {
+        "mode": "REQUIRED", 
+        "name": "CustomerID",
+        "type": "INTEGER"
+      },
+      {
+        "mode": "REQUIRED",
+        "name": "CustomerName",
+        "type": "STRING"
+      },
+      {
+        "mode": "REQUIRED",
+        "name": "BillToCustomerID",
+        "type": "INTEGER"
+      },
+      {
+        "mode": "REQUIRED",
+        "name": "CustomerCategoryID",
+        "type": "INTEGER"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "BuyingGroupID",
+        "type": "INTEGER"
+      },
+      {
+        "mode": "REQUIRED",
+        "name": "PrimaryContactPersonID",
+        "type": "INTEGER"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "AlternateContactPersonID",
+        "type": "INTEGER"
+      },
+      {
+        "mode": "REQUIRED",
+        "name": "DeliveryMethodID",
+        "type": "INTEGER"
+      },
+      {
+        "mode": "REQUIRED",
+        "name": "DeliveryCityID",
+        "type": "INTEGER"
+      },
+      {
+        "mode": "REQUIRED",
+        "name": "PostalCityID",
+        "type": "INTEGER"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "CreditLimit",
+        "type": "FLOAT"
+      },
+      {
+        "mode": "REQUIRED",
+        "name": "AccountOpenedDate",
+        "type": "DATE"
+      },
+      {
+        "mode": "REQUIRED",
+        "name": "StandardDiscountPercentage",
+        "type": "FLOAT"
+      },
+      {
+        "mode": "REQUIRED",
+        "name": "IsStatementSent",
+        "type": "BOOLEAN"
+      },
+      {
+        "mode": "REQUIRED",
+        "name": "IsOnCreditHold",
+        "type": "BOOLEAN"
+      },
+      {
+        "mode": "REQUIRED",
+        "name": "PaymentDays",
+        "type": "INTEGER"
+      },
+      {
+        "mode": "REQUIRED",
+        "name": "PhoneNumber",
+        "type": "STRING"
+      },
+      {
+        "mode": "REQUIRED",
+        "name": "FaxNumber",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "DeliveryRun",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "RunPosition",
+        "type": "STRING"
+      },
+      {
+        "mode": "REQUIRED",
+        "name": "WebsiteURL",
+        "type": "STRING"
+      },
+      {
+        "mode": "REQUIRED",
+        "name": "DeliveryAddressLine1",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "DeliveryAddressLine2",
+        "type": "STRING"
+      },
+      {
+        "mode": "REQUIRED",
+        "name": "DeliveryPostalCode",
+        "type": "INTEGER"
+      },
+      {
+        "mode": "REQUIRED",
+        "name": "DeliveryLocation",
+        "type": "STRING"
+      },
+      {
+        "mode": "REQUIRED",
+        "name": "PostalAddressLine1",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "PostalAddressLine2",
+        "type": "INTEGER"
+      },
+      {
+        "mode": "REQUIRED",
+        "name": "PostalPostalCode",
+        "type": "INTEGER"
+      },
+      {
+        "mode": "REQUIRED",
+        "name": "LastEditedBy",
+        "type": "TIMESTAMP"
+      },
+      {
+        "mode": "REQUIRED",
+        "name": "ValidFrom",
+        "type": "TIMESTAMP"
+      },
+      {
+        "mode": "REQUIRED",
+        "name": "ValidTo",
+        "type": "TIMESTAMP"
+      }
+    ]
+  },
+  "sourceFormat": "CSV",
+  "sourceUris": [
+    "gs://<gcs_data_location>/OrderLines.txt"
+  ]
+}

@@ -106,6 +106,6 @@
   },
   "sourceFormat": "CSV",
   "sourceUris": [
-    "<gcs_data_location>/FactOrder.txt"
+    "gs://six-impossible-things-dt6/FactOrder.txt"
   ]
 }
