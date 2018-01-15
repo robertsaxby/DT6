@@ -166,6 +166,6 @@
   },
   "sourceFormat": "CSV",
   "sourceUris": [
-    "<gcs_data_location>/OrderLines.txt"
+    "<gcs_data_location>/Customers.txt"
   ]
 }
